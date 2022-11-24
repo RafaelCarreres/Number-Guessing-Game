@@ -55,4 +55,3 @@ else
     INSERT_NUMBER_GUESSES_RESULT=$($PSQL "UPDATE usernames SET best_score=$NUMBER_GUESSES WHERE username='$USERNAME'") 
   fi
 fi
-# Why it-s not working
