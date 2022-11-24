@@ -53,11 +53,3 @@ fi
 
 USER_ID=$($PSQL "SELECT user_id FROM users WHERE username = '$USERNAME'")
 INSERT_GAME=$($PSQL "INSERT INTO games(number_guesses, user_id) VALUES($GUESS, $USER_ID)")
-
-# Welcome back, <username>! You have played <games_played> games, and your best game took <best_game> guesses.
-# Welcome, <username>! It looks like this is your first time here.
-# Guess the secret number between 1 and 1000:
-# It's lower than that, guess again:
-# It's higher than that, guess again:
-# That is not an integer, guess again:
-# You guessed it in <number_of_guesses> tries. The secret number was <secret_number>. Nice job!
